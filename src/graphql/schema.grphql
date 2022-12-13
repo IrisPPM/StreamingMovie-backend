@@ -1,0 +1,11 @@
+type Query{
+    getMovies:[Movie]
+    getMoviesById(_id:ID): Movie    
+}
+
+type Mutation {
+    createMovie(input:NoteInput) : Movie
+    updateMovie(input:NoteInput, _id:ID) :Movie
+    removeMovie(id:ID):[Movie]
+}
+
