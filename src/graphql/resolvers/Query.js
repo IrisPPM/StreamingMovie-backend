@@ -1,5 +1,5 @@
 import { get } from 'mongoose'
-import Movie from '../../models/Movie'
+import Movie from '../../models/Movie.js'
 
 const Query= {
         async getMovies(){
@@ -10,6 +10,7 @@ const Query= {
         const Movies = await Movie.findById(_id)
         return Movies
     }
+
 
   
 

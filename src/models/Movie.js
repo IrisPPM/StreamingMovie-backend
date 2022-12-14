@@ -12,7 +12,7 @@ const movieSchema = new Schema( {
     image:{
         type: String,
         required: true
-    } , 
+    }, 
     date: {
         type: String,
         required: true
