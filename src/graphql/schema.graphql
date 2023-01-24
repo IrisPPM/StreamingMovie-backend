@@ -1,6 +1,7 @@
 type Query{
     getMovies:[Movie]
-    getMoviesById(_id:ID): Movie    
+    getMoviesById(_id:ID): Movie 
+    login(email: String, password: String): [User]    
 }
 
 type Mutation {
@@ -15,6 +16,10 @@ type Movie {
     description:String!
     image:String!
     date:String!
+}
+type User{
+    email: String
+    password: String
 }
 
 input MovieInput {
