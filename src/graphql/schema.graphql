@@ -16,6 +16,7 @@ type Movie {
     description:String!
     image:String!
     date:String!
+    typeMovie:String
 }
 type User{
     email: String
@@ -27,4 +28,5 @@ input MovieInput {
     description:String!
     image:String!
     date:String!
+    typeMovie:String
 } 

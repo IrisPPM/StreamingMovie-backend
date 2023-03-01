@@ -16,7 +16,11 @@ const movieSchema = new Schema( {
     date: {
         type: String,
         required: true
-    }   
+    },  
+    typeMovie: {
+        type: String,
+        
+    }
 } );
 
 export default model("Movie", movieSchema)
